@@ -24,6 +24,8 @@ flake8>=6.0.0
 # Dev/testing tools (personal additions)
 pytest>=7.0.0
 coverage>=7.0.0  # track test coverage locally
+pytest-cov>=4.0.0  # nicer coverage reports with pytest integration
 
 # Note: run 'pip install -r requirements.txt' inside a virtualenv
 # python -m venv venv && source venv/bin/activate
+# To run tests with coverage: pytest --cov=. --cov-report=term-missing
