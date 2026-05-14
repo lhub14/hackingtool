@@ -32,8 +32,13 @@ ipython>=8.0.0  # uncommented - I use this regularly for debugging sessions
 # Optional: pretty-print diffs and colored tracebacks during dev
 pretty-errors>=1.2.25  # much easier to read tracebacks in the terminal
 
+# Optional: auto-reload modules during dev without restarting the interpreter
+# jurigged>=0.5.0  # useful but not always stable, leaving commented for now
+
 # Note: run 'pip install -r requirements.txt' inside a virtualenv
 # python -m venv venv && source venv/bin/activate
 # To run tests with coverage: pytest --cov=. --cov-report=term-missing
 # To install without dev tools: pip install colorama rich psutil requests urllib3 prompt_toolkit
 # To install without optional tools: comment out ipython and pretty-errors lines above
+# Last updated: pinned urllib3 floor to avoid SSL deprecation warnings on older installs
+urllib3>=2.0.0
